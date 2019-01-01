@@ -1,28 +1,38 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {
+  Component
+} from 'react';
 import './App.css';
+import Gallery from './Gallery';
+import Header from './Header';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+  renderGallery() {
+    return ( <Gallery images = {THUMBNAIL_IMAGES}
+      showThumbnails />
     );
   }
+
+  render() {
+    return (
+      <div>
+        <Header />
+        {this.renderGallery()}
+      </div>
+    )
+  }
 }
+
+const THUMBNAIL_IMAGES = [
+  {src: 'images/14.jpeg', orientation: 'square'},
+  {src: 'images/11.jpeg', orientation: 'landscape'},
+  {src: 'images/12.jpeg', orientation: 'landscape'},
+  {src: 'images/4.jpeg', orientation: 'landscape'},
+  {src: 'images/5.jpeg', orientation: 'landscape'},
+  {src: 'images/6.jpeg', orientation: 'square'},
+  {src: 'images/7.jpeg', orientation: 'landscape'},
+  {src: 'images/8.jpeg', orientation: 'landscape'},
+  {src: 'images/9.jpeg', orientation: 'landscape'},
+  {src: 'images/10.jpeg', orientation: 'landscape'},
+];
 
 export default App;
