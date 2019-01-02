@@ -121,9 +121,12 @@ const gutter = {
 };
 const classes = StyleSheet.create({
 	gallery: {
-		marginRight: -gutter.small,
+		display: 'grid',
+  	gridGap: '4px',
+  	gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+  	gridAutoRows: '150px',
+  	gridAutoFlow: 'row dense',
 		overflow: 'hidden',
-		width: '100vw',
 
 		'@media (min-width: 500px)': {
 			marginRight: -gutter.large,
@@ -132,28 +135,19 @@ const classes = StyleSheet.create({
 
 	// anchor
 	thumbnail: {
-		boxSizing: 'border-box',
-		display: 'block',
-		float: 'left',
-		lineHeight: 0,
-		paddingRight: gutter.small,
-		paddingBottom: gutter.small,
+		position: 'relative',
+		gridColumnStart: 'auto',
+  	gridRowStart: 'auto',
+		display: 'flex',
 		overflow: 'hidden',
-
-		'@media (min-width: 500px)': {
-			paddingRight: gutter.large,
-			paddingBottom: gutter.large,
-		},
 	},
 
 	// orientation
 	landscape: {
-		width: '30%',
-		height: '40vh',
+		gridRowEnd: 'span 1'
 	},
 	square: {
-		width: '40%',
-		height: '80vh',
+		gridRowEnd: 'span 2'
 	},
 
 	// actual <img />
