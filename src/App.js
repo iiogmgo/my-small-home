@@ -13,30 +13,33 @@ class App extends Component {
     );
   }
 
+  renderInfo() {
+    return (
+      <div className="App-section">
+        <h3>Hello,</h3>
+        <p>
+          These are photos of my home.<br/>
+          enjoy.<br/>
+        </p>
+
+        <h4>Hi,</h4>
+        <p>I'm a developer who like photo, music and IU :)</p>
+
+        <br/>
+        my-small-home's <a href='https://github.com/iiogmgo/my-small-home'>github</a>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div>
         <Header />
+        {this.renderInfo()}
         {this.renderGallery()}
       </div>
     )
   }
 }
-
-// const THUMBNAIL_IMAGES = [
-//   {src: 'images/14.jpeg', orientation: 'square'},
-//   {src: 'images/2.jpeg', orientation: 'square'},
-//   {src: 'images/12.jpeg', orientation: 'landscape'},
-//   {src: 'images/5.jpeg', orientation: 'landscape'},
-//   {src: 'images/4.jpeg', orientation: 'landscape'},
-//   {src: 'images/6.jpeg', orientation: 'landscape'},
-//   {src: 'images/7.jpeg', orientation: 'square'},
-//   {src: 'images/8.jpeg', orientation: 'landscape'},
-//   {src: 'images/9.jpeg', orientation: 'landscape'},
-//   {src: 'images/10.jpeg', orientation: 'landscape'},
-//   {src: 'images/3.jpeg', orientation: 'landscape'},
-//   {src: 'images/13.jpeg', orientation: 'landscape'},
-//   {src: 'images/1.jpeg', orientation: 'landscape'},
-// ];
 
 export default App;

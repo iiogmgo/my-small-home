@@ -1,20 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+
+body {
+  background-color: black;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  min-height: 30vh;
+  min-height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 2vmin);
-  color: #464444;
   background: url('/images/11.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 4px;
-  background-color: hsla(72, 100%, 93%, 0.3);
+  background-color: hsla(72, 1%, 38%, 0.3);
   background-blend-mode: overlay;
+}
+
+.App-section {
+  min-height: 10vh;
+  color: #ffffff;
+  padding: 10px 30px 30px;
+}
+
+.App-title {
+  text-shadow: 3px 2px #8888884a;
+  color: #ffffff;
+  font-size: calc(25px + 2vmin);
 }
 
 .App-link {

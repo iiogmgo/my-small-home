@@ -10,7 +10,7 @@ class Header extends Component {
   render() {
 		return (
 			<div className="App-header">
-				my-small-home
+				<span className="App-title">my-small-home</span>
 			</div>
 		);
   }
