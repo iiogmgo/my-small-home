@@ -10,20 +10,24 @@ const THUMBNAIL_IMAGES = [{
   },
   {
     src: 'images/12.jpeg',
-    orientation: 'landscape',
+    orientation: 'square',
+    // orientation: 'landscape',
     caption: '요양을 했다, 고기로'
   },
   {
     src: 'images/5.jpeg',
-    orientation: 'landscape'
+    orientation: 'square',
+    // orientation: 'landscape'
   },
   {
     src: 'images/4.jpeg',
-    orientation: 'landscape'
+    orientation: 'square',
+    // orientation: 'landscape'
   },
   {
     src: 'images/6.jpeg',
-    orientation: 'landscape'
+    orientation: 'square',
+    // orientation: 'landscape'
   },
   {
     src: 'images/7.jpeg',
@@ -31,15 +35,18 @@ const THUMBNAIL_IMAGES = [{
   },
   {
     src: 'images/8.jpeg',
-    orientation: 'landscape'
+    orientation: 'square',
+    // orientation: 'landscape'
   },
   {
     src: 'images/9.jpeg',
-    orientation: 'landscape'
+    orientation: 'square',
+    // orientation: 'landscape'
   },
   {
     src: 'images/10.jpeg',
-    orientation: 'landscape'
+    orientation: 'square',
+    // orientation: 'landscape'
   },
   {
     src: 'images/3.jpeg',
